@@ -56,34 +56,35 @@ html {
                 .price {
                     padding-top: 10px;
                     display: flex;
+                    align-items: center;
                 }
                     #icon {
-                        flex: 20%;
+                        flex: none;
                         font-size: 2rem;
                     }
                     #value {
-                        flex: 80%;
-                        margin: auto;
+                        flex: none;
                         padding-left: 10px;
                         opacity: 0.6;
                     }
                 .left-box > p {
                     padding-top: 5px;
-                    padding-bottom: 20px;
+                    padding-bottom: 25px;
                 }
                 #flex-button {
                     display: flex;
                     font-family: 'Karla', sans-serif;
                     font-weight: 700;
                     color: white;
+                    width: 100%;
                     box-shadow: 4px 8px 45px -14px rgba(0,0,0,0.77);                ;
                     background-color: hsl(71, 73%, 54%);
                     border: none;
                     border-radius: 5px;
-                    height: 30%;
                 }
                 #flex-button p {
                     margin: auto;
+                    padding: 15px;
                     font-size: 0.9rem;
                 }
                 #flex-button:hover {
@@ -103,3 +104,23 @@ html {
                     opacity: 0.8;
                     line-height: 1.25;
                 }
+
+@media (max-width: 576px) {
+    .content-box {
+        margin: 20px;
+    }
+    .primary-box {
+        width: 100%;
+        height: auto;
+    }
+    .primary-box > p {
+        line-height: 1.5;
+    }
+    .secondary-box {
+        display: block;
+    }
+    .secondary-box .left-box, .secondary-box .right-box, .content-box {
+        width: 100%;
+        height: auto;
+    }
+}
